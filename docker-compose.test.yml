@@ -1,3 +1,4 @@
-sut:
+services:
+  sut:
     build: .
     command: -V
