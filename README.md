@@ -19,7 +19,7 @@ docker run --rm \
   -v $(pwd)/build:/build \
   -e BUTLER_API_KEY=your_api_key \
   ghcr.io/delta3-studio/butler:latest \
-  push /build user/game: channel
+  push /build user/game:channel
 ```
 
 ## Environment Variables
