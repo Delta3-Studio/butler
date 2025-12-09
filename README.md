@@ -22,20 +22,6 @@ docker run --rm \
   push /build user/game: channel
 ```
 
-### Using in CI/CD
-
-#### GitHub Actions Example
-
-```yaml
-- name: Push to itch.io
-  run: |
-    docker run --rm \
-      -v ${{ github.workspace }}/build:/build \
-      -e BUTLER_API_KEY=${{ secrets.BUTLER_API_KEY }} \
-      ghcr.io/delta3-studio/butler:latest \
-      butler push /build user/game:channel
-```
-
 ## Environment Variables
 
 - `BUTLER_API_KEY`: Your itch.io API key for authentication. 
