@@ -1,7 +1,7 @@
 FROM alpine:3.23
 
 ENV GLIBC_VERSION=2.34-r0
-ENV BUTLER_VERSION=15.24.0
+ENV BUTLER_VERSION=15.26.0
 
 RUN apk add --no-cache curl
 RUN curl -L -o /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub
